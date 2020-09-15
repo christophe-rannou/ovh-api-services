@@ -14,6 +14,9 @@ angular.module('ovh-api-services').service('OvhApiOverTheBox', ($injector, $cach
     Device() {
       return $injector.get('OvhApiOverTheBoxDevice');
     },
+    Configuration() {
+      return $injector.get('OvhApiOverTheBoxConfiguration');
+    },
     resetCache: cache.removeAll,
     cache,
   };
