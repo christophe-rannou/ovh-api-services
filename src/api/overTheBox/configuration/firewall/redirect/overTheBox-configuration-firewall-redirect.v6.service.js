@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationFirewal
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationFirewallRedirect.cache,
+      isArray: true,
     },
     createRedirect: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationFirewal
     showAllRedirect: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/firewall/redirect/showAll',
+      isArray: true,
       interceptor,
     },
     getRedirect: {

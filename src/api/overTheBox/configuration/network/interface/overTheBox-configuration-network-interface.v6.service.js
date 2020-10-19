@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationNetwork
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationNetworkInterface.cache,
+      isArray: true,
     },
     createInterface: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationNetwork
     showAllInterface: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/network/interface/showAll',
+      isArray: true,
       interceptor,
     },
     getInterface: {

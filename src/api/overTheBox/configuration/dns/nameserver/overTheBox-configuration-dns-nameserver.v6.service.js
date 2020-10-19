@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDnsName
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationDnsNameserver.cache,
+      isArray: true,
     },
     createNameserver: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDnsName
     showAllNameserver: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/dns/nameserver/showAll',
+      isArray: true,
       interceptor,
     },
     getNameserver: {

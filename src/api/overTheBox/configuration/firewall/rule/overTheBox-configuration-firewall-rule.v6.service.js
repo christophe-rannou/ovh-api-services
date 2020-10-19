@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationFirewal
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationFirewallRule.cache,
+      isArray: true,
     },
     createRule: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationFirewal
     showAllRule: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/firewall/rule/showAll',
+      isArray: true,
       interceptor,
     },
     getRule: {

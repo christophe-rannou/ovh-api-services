@@ -21,11 +21,13 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDhcpSta
     },
     createStaticLease: {
       method: 'POST',
+      isArray: true,
       interceptor,
     },
     showAllStaticLease: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/dhcp/staticLease/showAll',
+      isArray: true,
       interceptor,
     },
     getStaticLease: {

@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationNetwork
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationNetworkRoute4.cache,
+      isArray: true,
     },
     createRoute4: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationNetwork
     showAllRoute4: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/network/route4/showAll',
+      isArray: true,
       interceptor,
     },
     getRoute4: {

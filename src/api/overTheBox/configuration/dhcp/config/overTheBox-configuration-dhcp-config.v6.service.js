@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDhcpCon
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationDhcpConfig.cache,
+      isArray: true,
     },
     createConfig: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDhcpCon
     showAllConfig: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/dhcp/config/showAll',
+      isArray: true,
       interceptor,
     },
     getConfig: {

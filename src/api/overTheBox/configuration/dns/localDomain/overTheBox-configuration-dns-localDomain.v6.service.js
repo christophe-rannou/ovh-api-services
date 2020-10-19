@@ -18,6 +18,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDnsLoca
     get: {
       method: 'GET',
       cache: OvhApiOverTheBoxConfigurationDnsLocalDomain.cache,
+      isArray: true,
     },
     createLocalDomain: {
       method: 'POST',
@@ -26,6 +27,7 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDnsLoca
     showAllLocalDomain: {
       method: 'GET',
       url: '/overTheBox/:serviceName/configuration/dns/localDomain/showAll',
+      isArray: true,
       interceptor,
     },
     getLocalDomain: {
