@@ -23,10 +23,6 @@ angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationDnsName
     createNameserver: {
       method: 'POST',
       isArray: false,
-      params: {
-        server: '@server',
-        priority: '@priority',
-      },
       interceptor,
     },
     showAllNameserver: {
