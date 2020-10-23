@@ -1,5 +1,5 @@
 angular.module('ovh-api-services').service('OvhApiOverTheBoxConfigurationFirewallRedirect', ($injector, $cacheFactory) => {
-  const cache = $cacheFactory('OvhApiOverTheBoxConfigurationFirewall');
+  const cache = $cacheFactory('OvhApiOverTheBoxConfigurationFirewallRedirect');
 
   return {
     v6() {
