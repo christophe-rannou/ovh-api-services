@@ -10,6 +10,6 @@ angular
     },
     logs: {
       method: 'GET',
-      url: '/cloud/project/:serviceName/ai/training/job/:jobId/logs',
+      url: '/cloud/project/:serviceName/ai/training/job/:jobId/log',
     },
   }));
