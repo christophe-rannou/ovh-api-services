@@ -5,7 +5,7 @@ angular
     jobId: '@jobId',
   }, {
     kill: {
-      method: 'POST',
+      method: 'PUT',
       url: '/cloud/project/:serviceName/ai/training/job/:jobId/kill',
     },
     logs: {
